@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Social links profile</title>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                 Green: "hsl(75, 94%, 57%)",
+                 White: "hsl(0, 0%, 100%)",
+                 Grey700: "hsl(0, 0%, 20%)",
+                 Grey800: "hsl(0, 0%, 12%)",
+                 Grey900: "hsl(0, 0%, 8%)",
+              },
+            },
+          },
+        };
+      </script>
+</head>
+
+
+<body class="bg-Grey900 flex items-center justify-center h-screen">
+    <div class="py-[35px] w-[350px] sm:px-[45px] px-[25px] w-[350px] sm:w-[450px] bg-Grey800 flex flex-col items-center jus justify-center rounded-md shadow-lg">
+      <img class="rounded-full w-20" src="./img/avatar-jessica.jpeg" alt="profile">
+      <h1 class="text-White mt-4 font-[600] text-2xl">Jessica Randall</h1>
+      <p class="text-Green text-sm font-semibold mt-2">London, United Kingdom</p>
+      <p class="text-sm text-white mt-8">"Front-end developer and avid reader."</p>
+      <div class="mt-4 flex w-full flex-col gap-3">
+        <div class="w-full text-center rounded-md bg-Grey700 text-White py-3 hover:bg-Green hover:text-Grey900 ease duration-500 font-bold ">GitHub</div>
+        <div class="w-full text-center rounded-md bg-Grey700 text-White py-3 hover:bg-Green hover:text-Grey900 ease duration-500 font-bold ">Frontend Mentor</div>
+        <div class="w-full text-center rounded-md bg-Grey700 text-White py-3 hover:bg-Green hover:text-Grey900 ease duration-500 font-bold ">Linkedin</div>
+        <div class="w-full text-center rounded-md bg-Grey700 text-White py-3 hover:bg-Green hover:text-Grey900 ease duration-500 font-bold ">Twitter</div>
+        <div class="w-full text-center rounded-md bg-Grey700 text-White py-3 hover:bg-Green hover:text-Grey900 ease duration-500 font-bold ">Instagram</div>
+      </div>
+    </div>
+</body>
+</html>
